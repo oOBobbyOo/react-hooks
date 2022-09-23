@@ -1,0 +1,10 @@
+# Logs
+logs
+*.log
+
+node_modules
+dist
+
+.idea
+.DS_Store
+*.d.ts
