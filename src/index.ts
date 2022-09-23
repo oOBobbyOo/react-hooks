@@ -1,4 +1,5 @@
 export { default as useAudio } from './useAudio'
+export { default as useCookie } from './useCookie'
 export { default as useCopyToClipboard } from './useCopyToClipboard'
 export { default as useEffectOnce } from './useEffectOnce'
 export { default as useLocalStorage } from './useLocalStorage'
