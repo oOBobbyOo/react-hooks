@@ -1,3 +1,4 @@
+export { default as useApi } from './useApi'
 export { default as useAudio } from './useAudio'
 export { default as useCookie } from './useCookie'
 export { default as useCopyToClipboard } from './useCopyToClipboard'
