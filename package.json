@@ -17,7 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "copy-to-clipboard": "^3.3.2",
-    "js-cookie": "^3.0.1"
+    "js-cookie": "^3.0.1",
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -27,6 +28,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/js-cookie": "^3.0.2",
+    "@types/lodash-es": "^4.17.6",
     "@types/react": "^18.0.21",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
