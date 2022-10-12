@@ -41,6 +41,7 @@ const useWindowScroll = (): State => {
     return () => {
       off(window, 'scroll', handler)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return state
