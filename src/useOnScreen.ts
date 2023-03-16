@@ -20,10 +20,8 @@ export default function useOnScreen<T extends Element>(
       observer.observe(ref.current)
     }
     return () => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       ref.current && observer.unobserve(ref.current)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return isIntersecting
 }
