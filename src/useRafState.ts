@@ -1,24 +1,26 @@
-import { Dispatch, SetStateAction, useCallback, useRef, useState } from 'react'
-
+import { useCallback, useRef, useState } from 'react'
+import type { Dispatch, SetStateAction } from 'react'
 import useUnmount from './useUnmount'
 
-const useRafState = <S>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>] => {
-  const frame = useRef(0)
+function useRafState<S>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>]
+
+function useRafState<S>(initialState: S | (() => S)) {
+  const ref = useRef(0)
   const [state, setState] = useState(initialState)
 
   const setRafState = useCallback((value: S | ((prevState: S) => S)) => {
-    cancelAnimationFrame(frame.current)
+    cancelAnimationFrame(ref.current)
 
-    frame.current = requestAnimationFrame(() => {
+    ref.current = requestAnimationFrame(() => {
       setState(value)
     })
   }, [])
 
   useUnmount(() => {
-    cancelAnimationFrame(frame.current)
+    cancelAnimationFrame(ref.current)
   })
 
-  return [state, setRafState]
+  return [state, setRafState] as const
 }
 
 export default useRafState
