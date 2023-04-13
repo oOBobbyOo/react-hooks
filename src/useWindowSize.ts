@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import useRafState from './useRafState'
-import { isBrowser, off, on } from './shard'
+import { isBrowser, off, on } from './shared'
 
 const useWindowSize = (initialWidth = Infinity, initialHeight = Infinity) => {
   const [state, setState] = useRafState<{ width: number; height: number }>({

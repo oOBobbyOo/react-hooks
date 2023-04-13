@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-import { isBrowser, off, on } from './shard'
+import { isBrowser, off, on } from './shared'
 import useRafState from './useRafState'
 
 export interface State {

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import type { RefObject } from 'react'
-import { off, on } from './shard'
+import { off, on } from './shared'
 
 const defaultEvents = ['mousedown', 'touchstart']
 
