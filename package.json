@@ -2,19 +2,21 @@
   "name": "react-hooks",
   "version": "1.0.0",
   "description": "react hooks",
-  "main": "index.js",
+  "keywords": [
+    "react",
+    "react-hooks"
+  ],
+  "author": "Bobby",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rimraf ./dist",
     "lint:fix": "eslint './src/**/*.{js,ts}' --fix",
     "prepare": "husky install"
   },
-  "keywords": [
-    "react",
-    "react-hooks"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "copy-to-clipboard": "^3.3.2",
     "js-cookie": "^3.0.1",
