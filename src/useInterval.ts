@@ -2,7 +2,11 @@ import { useCallback, useEffect, useRef } from 'react'
 import useMemoizedFn from './useMemoizedFn'
 import { isNumber } from './shared'
 
-const useInterval = (fn: () => void, delay?: number, options: { immediate?: boolean } = {}) => {
+const useInterval = (
+  fn: () => void,
+  delay?: number | null,
+  options: { immediate?: boolean } = {}
+) => {
   const timerCallback = useMemoizedFn(fn)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
