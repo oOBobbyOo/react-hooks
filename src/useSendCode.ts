@@ -17,7 +17,7 @@ const useSendCode = ({ cb, time = 60 }: IOptions): ReturnType => {
   // 倒计时
   const remainSecond = useRef<number>(time)
   // 计时器对象
-  const timer = useRef<number | null>(null)
+  const timer = useRef<NodeJS.Timer | null>(null)
 
   // 倒计时
   const countDown = () => {
