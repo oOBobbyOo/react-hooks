@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react'
 import { debounce } from 'lodash-es'
 
-const useRem = (designWidth: number = 750) => {
+const useRem = (designWidth = 750) => {
   const setRemFontBaseSize = useCallback(() => {
     const clientWidth = document.documentElement.clientWidth || document.body.clientWidth
     const rem = (clientWidth / designWidth) * 100

@@ -25,6 +25,12 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': ['off'],
     '@typescript-eslint/no-empty-function': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'off'
+    'react-hooks/exhaustive-deps': 'off',
+    '@typescript-eslint/ban-types': 'off'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
