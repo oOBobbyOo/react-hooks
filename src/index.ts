@@ -1,5 +1,6 @@
 export { default as useApi } from './useApi'
 export { default as useAudio } from './useAudio'
+export { default as useBlobity } from './useBlobity'
 export { default as useBoolean } from './useBoolean'
 export { default as useClickAway } from './useClickAway'
 export { default as useCookie } from './useCookie'
