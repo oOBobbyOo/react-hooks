@@ -7,9 +7,12 @@ const useInput = (initialValue: any) => {
     setValue(event.target.value.trim())
   }
 
+  const reset = () => setValue(initialValue)
+
   return {
     value,
-    onChange: handleChange
+    onChange: handleChange,
+    reset
   }
 }
 export default useInput
