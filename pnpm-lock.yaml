@@ -23,6 +23,9 @@ importers:
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
+      preloadjs:
+        specifier: ^1.0.1
+        version: 1.0.1
       qs:
         specifier: ^6.11.0
         version: 6.11.0
@@ -60,6 +63,9 @@ importers:
       '@types/node':
         specifier: ^20.4.0
         version: 20.4.0
+      '@types/preloadjs':
+        specifier: ^0.6.36
+        version: 0.6.36
       '@types/qs':
         specifier: ^6.9.7
         version: 6.9.7
@@ -997,6 +1003,9 @@ packages:
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
 
+  '@types/createjs-lib@0.0.33':
+    resolution: {integrity: sha512-mvK1sn2qSyGPwctg/MsjAP5m3/TBx83eB0hcEdZ6UqpuzQqCUWpVyyQddqkbAsKRpMECK0s7JosYXoTtIuNbhw==}
+
   '@types/js-cookie@3.0.2':
     resolution: {integrity: sha512-6+0ekgfusHftJNYpihfkMu8BWdeHs9EOJuGcSofErjstGPfPGEu9yTu4t460lTzzAMl2cM5zngQJqPMHbbnvYA==}
 
@@ -1023,6 +1032,9 @@ packages:
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
+
+  '@types/preloadjs@0.6.36':
+    resolution: {integrity: sha512-/Xo6BRCkvZiw0VXHszRQJnnTHyfkISPD5DiMj0JDrmQWiw104BxoijjeIlZ0umQxXEUb+gWLZsdZbuEhmP5vsw==}
 
   '@types/prop-types@15.7.5':
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -2168,6 +2180,9 @@ packages:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
     engines: {node: '>=0.10'}
     hasBin: true
+
+  preloadjs@1.0.1:
+    resolution: {integrity: sha512-XwdxL9bfoq9abJU4lVBJDVgbxWvQOk/BbuwXKEEG5BaduY7S8N1VXX4My5PM/UwW6Xf4uWAvWzwWlzb20uECxQ==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -3817,6 +3832,8 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/createjs-lib@0.0.33': {}
+
   '@types/js-cookie@3.0.2': {}
 
   '@types/json-schema@7.0.11': {}
@@ -3836,6 +3853,10 @@ snapshots:
   '@types/normalize-package-data@2.4.1': {}
 
   '@types/parse-json@4.0.0': {}
+
+  '@types/preloadjs@0.6.36':
+    dependencies:
+      '@types/createjs-lib': 0.0.33
 
   '@types/prop-types@15.7.5': {}
 
@@ -5029,6 +5050,8 @@ snapshots:
   picomatch@4.0.3: {}
 
   pidtree@0.6.0: {}
+
+  preloadjs@1.0.1: {}
 
   prelude-ls@1.2.1: {}
 

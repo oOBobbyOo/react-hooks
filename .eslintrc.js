@@ -26,7 +26,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'off',
-    '@typescript-eslint/ban-types': 'off'
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off'
   },
   settings: {
     react: {
